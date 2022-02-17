@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>re-ordenamiento</title>
+    <style>
+        .fila{
+            border: 2px solid blue;
+            background-color: lightblue;
+            margin-bottom: 15px;
+        }
+        .columna{
+            background-color: lightgreen;
+            border: 2px solid green;
+            text-align: center;
+        }
+        .columna:nth-child(even){
+            background-color: palegoldenrod;
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row fila">
+            <div class="col-2 order-last columna">1</div>
+            <div class="col-2  columna">2</div>
+            <div class="col-2 order-first columna">3</div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

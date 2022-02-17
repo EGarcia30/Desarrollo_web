@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Media Object</title>
+    <style>
+        :root{
+            --color-white-blue:#eff2f5;
+        }
+
+        .fondo{
+            background-color: var(--color-white-blue);
+        }
+
+        body
+        .bg-white-blue{
+            background-color: var(--color-white-blue);
+        }
+
+        .media__img{
+            --tamaño:60px;
+            height: var(--tamaño);
+            width: var(--tamaño);
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-white mt-3">
+        <h2>Media Object</h2>
+        <p>Create a media object without .media and .media-body classes (BS5):</p>
+        <div class="d-flex border p-3">
+            <img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375_960_720.png" alt="John Doe"
+                 class="flex-shrink-0 me-3 mt-3 rounded-circle media__img">
+            <div>
+                <h4>John Doe <small>Posted on February 19, 2016</small></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <ul class="list-unstyled">
+            <li>
+                <div class="media d-flex p-3">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375_960_720.png" alt="John Doe"
+                         class="flex-shrink-0 me-3 mt-3 rounded-circle media__img">
+                    <div>
+                        <div class="bg-white-blue p-3 rounded" >
+                            <h4>John Doe <small>Posted on February 19, 2016</small></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                        </div>
+                        
+                        <div class="d-flex p-3">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375_960_720.png" alt="John Doe"
+                                 class="flex-shrink-0 me-3 mt-3 rounded-circle media__img">
+                            <div>
+
+                                <div class="bg-white-blue p-3 rounded">
+                                    <h4>John Doe <small>Posted on February 19, 2016</small></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua.</p>
+                                </div>
+
+                                <div class="media d-flex flex-row-reverse p-3">
+                                    <img src="https://cdn.pixabay.com/photo/2016/11/18/23/38/child-1837375_960_720.png" alt="John Doe"
+                                        class="flex-shrink-0 ms-3 mt-3 rounded-circle media__img">
+                                    <div class="bg-white-blue p-3 rounded" >
+                                        <h4>John Doe <small>Posted on February 19, 2016</small></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua.
+                                        </p>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+        
+    </div>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
